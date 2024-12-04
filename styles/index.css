@@ -63,6 +63,7 @@ body {
 .main-logo {
   max-width: 80%;
   margin-top: 2rem;
+  margin-bottom: calc(max((60pt - 15vw),0));
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.8)) drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.8));
 }
 
@@ -82,12 +83,37 @@ body {
 
 .credit {
   font-size: 0.8rem;
-  margin-top: 300px;
+  margin-top: 100px;
   margin-inline: 20%;
-
 
 }
 
 .dot {
   font-size: 12pt;
+}
+@media (max-aspect-ratio:0.75) {
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .coming-soon-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .splash-text {
+    margin-inline: 5%;
+  }
+
+  .credit {
+    margin-top: 150px;
+    margin-inline: 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-logo {
+    margin-bottom: 100px;
+  }
 }
