@@ -2,7 +2,7 @@ html {
 
   font-size: 16px;
   font-family: 'Lexend', sans-serif;
-
+  color:rgb(0, 0, 20)
 }
 
 body {
@@ -53,6 +53,18 @@ body {
   cursor: pointer;
   transition: all 150ms;
   
+}
+.timeline {
+  font-family: Audiowide;
+  font-size: 80%;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: solid;
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(255, 213, 49, 1.00), rgba(255, 128, 37, 1.00));
+  color: #000;
+  cursor: pointer;
+  transition: all 150ms;
 }
 
 .soon:hover {

@@ -1,0 +1,36 @@
+body {
+  background-color: white;
+  background-image: linear-gradient(to bottom, rgba(255, 128, 37, 0.50), rgba(255, 213, 49, 0.500));
+  text-align: center;
+  color:rgb(0, 0, 20)
+
+}
+.title {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.4ch;
+  margin-top: 20px;
+  padding-top: 20px;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.8));
+}
+.back {
+  position: relative;
+  display: flex;
+  margin-top: -40px;
+  font-family: Audiowide;
+  font-size: 80%;
+  font-weight: 700;
+  padding: 0.5rem 0.5rem;
+  border: solid;
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(255, 213, 49, 1.00), rgba(255, 128, 37, 1.00));
+  color: #000;
+  cursor: pointer;
+  transition: all 150ms;
+}
+.twitter-timeline{
+  padding: 5% 20% 0% 20%;
+}
+.timelines{
+  margin-bottom: 1000px;
+}
