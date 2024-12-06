@@ -87,6 +87,10 @@ body {
   margin-inline: 20%;
 
 }
+.site-credit {
+  text-align: right;
+  font-size: 4pt;
+}
 
 .dot {
   font-size: 12pt;
