@@ -15,7 +15,9 @@
   background-color: rgba(64, 64, 64, 0.3);
   z-index: 1;
 }
-
+footer{
+  margin-bottom: 100px;
+}
 html {
 
   font-size: 16px;

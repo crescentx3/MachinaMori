@@ -1,0 +1,196 @@
+a {
+  text-decoration: none;
+}
+
+.r {
+  justify-content: flex-end;
+  text-align: right;
+  align-self: flex-end;
+}
+
+.artist.r {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.about-us {
+  font-family: Audiowide;
+  font-size: 80%;
+  font-weight: 700;
+  border: solid;
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(255, 213, 49, 1.00), rgba(255, 128, 37, 1.00));
+  color: #000;
+  cursor: pointer;
+  transition: all 150ms;
+}
+
+.artist {
+  position: relative;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: .5vw;
+  border-color: #FFFFFFAA;
+  max-width: 80%;
+  margin-bottom: 20px;
+  display: flex;
+  background-color: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+  transition: all 250ms;
+}
+.artist:hover{
+  background-color: rgba(255, 255, 255, .3);
+  scale: 1.04;
+}
+
+.artist::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: calc(var(--y, 0) * 1px - 50vw);
+  left: calc(var(--x, 0) * 1px - 50vw);
+  width: 100vw;
+  height: 100vw;
+  background: radial-gradient(#FFFFFFAA, #3984ff00 20vw);
+
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+
+.artist:hover::after {
+  opacity: 0.4;
+}
+
+
+
+
+
+.small_side {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: max-content;
+  margin: 1vw;
+}
+
+.big_side {
+  margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  flex-wrap: nowrap;
+}
+
+.artist-logo {
+  position: relative;
+  float: left;
+  margin: 1vw;
+  margin-bottom: 5vw;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1vw;
+  border-color: #FFFFFFAA;
+  max-width: 20vw;
+  max-height: 20vw;
+  transition: all 250ms;
+  aspect-ratio: 1;
+
+}
+.artist-logo:hover {
+  scale: 0.98;
+}
+
+.artist-name {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: Audiowide;
+  font-size: 5vw;
+
+}
+
+.artist-bio {
+  display: flex;
+  margin-left: 0px;
+  font-size: 2vw;
+  font-family: Lexend;
+}
+
+.credits {
+  margin-top: -5vw;
+  display: flex;
+  font-size: 2.25vw;
+  font-family: Audiowide;
+}
+
+.socials {
+  display: flex;
+  padding-left: 1vw;
+  justify-content: space-evenly;
+
+}
+
+.sm {
+  position: relative;
+  width: 5vw;
+  height: 5vw;
+
+  background-color: #1D9BF0;
+  color: white;
+  border: none;
+  border-color: #0c46ca;
+  border-radius: 189px;
+  cursor: pointer;
+  transition: all 200ms;
+  margin-top: -30px;
+  flex-wrap: nowrap;
+  aspect-ratio: 1;
+}
+
+.sm:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, .2);
+  scale: 1.2;
+}
+
+.sm:active {
+  scale: 0.7;
+}
+
+.xitter {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bluesky {
+  background-color: rgba(2, 133, 255, 0.5);
+}
+
+.youtube {
+  background-color: rgba(255, 0, 51, 0.5);
+}
+
+.off {
+  background-color: rgba(0, 0, 0, 0);
+  visibility: hidden;
+}
+
+
+.sm img {
+  width: 2.5vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 720px) {
+  .artist{
+    max-width: 80%;
+    scale: 0.5;
+   margin-bottom: -12vw;
+  }
+  .artist:hover{
+    scale: 0.52;
+  }
+}
