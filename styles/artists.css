@@ -1,0 +1,197 @@
+a {
+  text-decoration: none;
+}
+
+
+.about-us {
+  font-family: Audiowide;
+  font-size: 80%;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: solid;
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(255, 213, 49, 1.00), rgba(255, 128, 37, 1.00));
+  color: #000;
+  cursor: pointer;
+  transition: all 150ms;
+}
+
+.artist-left {
+  border-style: dashed;
+  border-radius: 30px;
+  border-width: 3px;
+  max-width: 90%;
+  max-height: fit-content;
+  min-height: 172px;
+  position: relative;
+  padding-top: 1%;
+  float: left;
+  margin-bottom: 40px;
+}
+
+.artist-right {
+  border-style: dashed;
+  border-radius: 30px;
+  border-width: 3px;
+  max-width: 90%;
+  max-height: fit-content;
+  min-height: 172px;
+  position: relative;
+  padding-top: 1%;
+  float: right;
+  margin-bottom: 40px;
+}
+
+.artist-logo {
+  position: relative;
+  float: left;
+  left: 8px;
+  top: 12px;
+
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 8px;
+  max-width: 120px;
+
+}
+
+.artist-name {
+
+  position: relative;
+  float: inline-start;
+  left: 4%;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: Audiowide;
+  font-size: 20pt;
+}
+
+.artist-bio {
+  position: relative;
+  margin-top: 60px;
+  margin-right: 1%;
+  margin-left: 160px;
+  font-size: 11pt;
+  font-family: Lexend;
+}
+
+.artist-logo-right {
+  position: relative;
+  float: right;
+  right: 8px;
+  top: 12px;
+  bottom: 8px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 8px;
+  max-width: 120px;
+}
+
+.artist-name-right {
+
+  position: relative;
+  float: inline-end;
+  right: 4%;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: Audiowide;
+  font-size: 20pt;
+}
+
+.artist-bio-right {
+  position: relative;
+  text-align: right;
+  margin-top: 60px;
+  margin-left: 1%;
+  margin-right: 160px;
+  font-size: 11pt;
+  font-family: Lexend;
+}
+
+
+.body-text {
+  margin: 4%;
+  font-size: 109%;
+}
+
+.sm {
+  width: 64px;
+  height: 64px;
+  padding-top: 5px;
+  background-color: #1D9BF0;
+  color: white;
+  border: none;
+  border-color: #0c46ca;
+  border-radius: 189px;
+  cursor: pointer;
+  transition: all 200ms;
+  scale: 0.7;
+  margin-top: -30px;
+  margin-inline: -5px;
+}
+.sm:hover {
+  box-shadow: 0px 4px 10px rgba(0,0,0,.2);
+}
+.sm:active {
+  scale: 0.7
+}
+.xitter {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bluesky {
+  background-color: rgba(2, 133, 255, 0.5);
+}
+
+.youtube {
+  background-color: rgba(255, 0, 51, 0.5);
+}
+.off {
+  background-color: rgba(0,0,0,0);
+  visibility: hidden;
+}
+.socials {
+  padding-left: 5px;
+  float: left;
+}
+
+.sm img {
+  max-height: 32px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+
+
+  @media (max-aspect-ratio:0.83) {
+    .artist-bio {
+      padding-top: 140px;
+      margin-left: 1%;
+      margin-right: auto;
+    }
+
+    .artist-bio-right {
+      padding-top: 140px;
+      margin-right: 1%;
+      margin-left: auto;
+    }
+
+    .artist-name {
+      padding-top: 12px;
+    }
+
+    .artist-name-right {
+      padding-top: 12px;
+    }
+
+    .body-text {
+      margin-top: 0px;
+
+    }
+
+    .main-logo {
+      max-width: 60%;
+      padding-top: 0px;
+    }
+  }
