@@ -1,7 +1,7 @@
 const artists = [
   {
     name: "HYPNOPOSSUM",
-    songs: "//Furor Machinae",
+    songs: "//Furor_Machinae",
     bio: "Coming Soon",
     profile: "/assets/profiles/hypnopossum.jpg",
     twitter: "https://twitter.com/HYPN0POSSUM",
@@ -18,7 +18,7 @@ const artists = [
     bluesky: "https://bsky.app/profile/electrovoid.bsky.social",
   },
   {
-    name: "Keyesgen",
+    name: "keyesgen",
     songs: "//VISIONS",
     bio: "Coming Soon",
     profile: "/assets/profiles/keyesgen.jpg",
