@@ -1,0 +1,159 @@
+#shader-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 64, 64, 0.3); 
+  z-index: 1; 
+}
+
+html {
+
+  font-size: 16px;
+  font-family: 'Lexend', sans-serif;
+  color:rgb(0, 0, 20)
+}
+
+body {
+  text-align: center;
+  
+}
+.shader::before {
+background-color: rgba(0, 0, 0, .5);
+}
+.top-bar {
+  position: relative;
+  font-family: 'Lexend', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  padding-bottom: 5px;
+  filter: drop-shadow(3px 3px 20px rgba(0, 0, 0, .3));
+}
+
+.logo {
+  position: relative;
+  height: 50px;
+  align-content: flex-start;
+  filter: drop-shadow(2px 1px 2px rgba(0, 0, 0, .5)) brightness(0);
+  transition: transform 1000ms ease-in-out;
+
+}
+.logo:hover {
+  transform: rotate(720deg);
+}
+
+.coming-soon-buttons {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+.soon {
+  font-family: Audiowide;
+  font-size: 80%;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: solid;
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(255, 213, 49, 1.00), rgba(255, 128, 37, 1.00));
+  color: #000;
+  cursor: pointer;
+  transition: all 150ms;
+  
+}
+
+.soon:hover {
+  transform: translateY(-2px);
+}
+
+.soon:active {
+  transform: translateY(2px);
+}
+
+.main-logo {
+  min-width: 80%;
+  max-width: 90%;
+  margin-top: 2rem;
+  margin-bottom: calc(max((60pt - 15vw),0));
+  filter: drop-shadow(0px 0px 1px rgba(255,255,255, 0.5)) drop-shadow(0px 0px 2px rgba(255,255,255, 1)) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+}
+
+
+.album-date {
+  font-family: 'Audiowide', sans-serif;
+  letter-spacing: 0.4ch;
+  font-size: 4vw;
+  margin-top: -25px;
+  margin-bottom: 32px;
+  text-decoration: solid;
+  filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 1));
+}
+
+.splash-text {
+  text-align: center;
+  margin-inline: 20%;
+  margin-top: -18px;
+  font-size: 3vw;
+  filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 1));
+}
+
+.site-credit {
+  font-size: 0.3rem;
+  margin-top: 100px;
+  margin-inline: 20%;
+  text-align: right;
+}
+.ver {
+  text-align: left;
+  font-size: 1vw;
+  margin-top: -13px;
+}
+
+.dot {
+  font-size: 12pt;
+}
+
+.shader-web-background-fallback {
+  background: url("https://placekitten.com/666/666");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-aspect-ratio:0.75) {
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .coming-soon-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .splash-text {
+    margin-inline: 5%;
+  }
+
+  .credit {
+    margin-top: 150px;
+    margin-inline: 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-logo {
+    margin-bottom: 100px;
+  }
+}
