@@ -1,9 +1,16 @@
-const buttons = document.querySelectorAll(".artist");
+const elements = document.querySelectorAll(".artist");
 
-buttons.forEach((button) => {
-  button.addEventListener("mousemove", (e) => {
-    const { x, y } = button.getBoundingClientRect();
-    button.style.setProperty("--x", e.clientX - x);
-    button.style.setProperty("--y", e.clientY - y);
+elements.forEach((element) => {
+  element.addEventListener("mousemove", (e) => {
+
+    const rect = element.getBoundingClientRect();
+    const scaleX = rect.width / element.offsetWidth;
+    const scaleY = rect.height / element.offsetHeight;
+
+    const x = (e.clientX - rect.left) / scaleX;
+    const y = (e.clientY - rect.top) / scaleY;
+
+    element.style.setProperty("--x", x);
+    element.style.setProperty("--y", y);
   });
 });
