@@ -94,6 +94,7 @@ a {
   border-color: #FFFFFFAA;
   max-width: 20vw;
   transition: all 250ms;
+  aspect-ratio: 1;
 
 }
 .artist-logo:hover {
