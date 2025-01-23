@@ -31,7 +31,14 @@ body {
 .shader::before {
   background-color: rgba(0, 0, 0, .5);
 }
-
+.top-color-block {
+  position: relative;
+  margin-inline: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgba(255, 205, 100, .5);
+  box-shadow: 0 0 20px rgba(255,205,100);
+}
 .top-bar {
   position: relative;
   font-family: 'Lexend', sans-serif;
@@ -162,4 +169,10 @@ body {
   .main-logo {
     margin-bottom: 100px;
   }
+}
+@media screen and (min-width: 720px) {
+.top-section {
+  scale: 0.8;
+}
+
 }
