@@ -22,7 +22,6 @@ html {
   font-family: 'Lexend', sans-serif;
   color: rgb(0, 0, 20)
 }
-
 body {
   text-align: center;
 
@@ -30,6 +29,7 @@ body {
 
 .shader::before {
   background-color: rgba(0, 0, 0, .5);
+  
 }
 .top-color-block {
   position: relative;
@@ -37,7 +37,7 @@ body {
   padding: 0;
   width: 100%;
   background-color: rgba(255, 205, 100, .5);
-  box-shadow: 0 0 20px rgba(255,205,100);
+  box-shadow: 0 10px 20px rgba(255,205,100,.5);
 }
 .top-bar {
   position: relative;
@@ -45,9 +45,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1%;
+  padding: 0px;
   padding-bottom: 5px;
-  filter: drop-shadow(3px 3px 20px rgba(0, 0, 0, .3));
+  background-color: rgba(255, 128, 37, .8);
+  box-shadow: 0 0 20px rgba(255, 128, 37, .80);
 }
 
 .logo {
