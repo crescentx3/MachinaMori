@@ -27,7 +27,6 @@ a {
 
 .artist {
   position: relative;
-  /* Needed to position the pseudo-element */
   border-style: solid;
   border-radius: 30px;
   border-width: .5vw;
@@ -36,9 +35,28 @@ a {
   display: flex;
   background-color: rgba(255, 255, 255, .1);
   backdrop-filter: blur(15px);
-  /* Apply the blur effect to the background */
-
+  overflow: hidden;
 }
+
+.artist::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--y, 0) * 1px - 50vw);
+  left: calc(var(--x, 0) * 1px - 50vw);
+  width: 100vw;
+  height: 100vw;
+  background: radial-gradient(#FFFFFFAA, #3984ff00 20vw);
+
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+
+.artist:hover::after {
+  opacity: 0.4;
+}
+
+
 
 
 
@@ -61,7 +79,7 @@ a {
 .artist-logo {
   position: relative;
   float: left;
-margin: 1vw;
+  margin: 1vw;
   margin-bottom: 5vw;
   border-radius: 50%;
   border-style: solid;
@@ -79,7 +97,7 @@ margin: 1vw;
 }
 
 .artist-bio {
-
+  display: flex;
   margin-left: 0px;
   font-size: 2vw;
   font-family: Lexend;

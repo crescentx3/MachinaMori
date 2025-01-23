@@ -133,15 +133,6 @@ const artists = [
     twitter: "https://twitter.com/0TSXL",
     youtube: "https://youtube.com/@0TSXL",
     bluesky: "https://bsky.app/profile/0ts.bsky.social",
-  },
-  {
-    name: "",
-    songs: "",
-    bio: "Coming Soon",
-    profile: "/assets/profiles/.jpg",
-    twitter: "https://twitter.com/",
-    youtube: "https://youtube.com/",
-    bluesky: "https://bsky.app/profile/",
   }
 ];
 
@@ -151,7 +142,7 @@ artists.forEach((artist, index) => {
   const isLeftLayout = index % 2 === 0;
 
   const socialsHTML = [];
-  
+
   if (artist.twitter) {
     socialsHTML.push(`
       <a href="${artist.twitter}" target="_blank">
@@ -161,7 +152,7 @@ artists.forEach((artist, index) => {
       </a>
     `);
   }
-  
+
   if (artist.bluesky) {
     socialsHTML.push(`
       <a href="${artist.bluesky}" target="_blank">
@@ -171,7 +162,7 @@ artists.forEach((artist, index) => {
       </a>
     `);
   }
-  
+
   if (artist.youtube) {
     socialsHTML.push(`
       <a href="${artist.youtube}" target="_blank">
@@ -195,12 +186,12 @@ artists.forEach((artist, index) => {
     <div class="big_side">
       <p class="artist-name ${isLeftLayout ? "" : "r"}">${artist.name}</p>
       <p class="credits ${isLeftLayout ? "" : "r"}">${artist.songs}</p>
-      <p class="artist-bio">${artist.bio}</p>
+      <p class="artist-bio ${isLeftLayout ? "" : "r"}">${artist.bio}</p>
     </div>
   `;
 
   const artistHTML = `
-    <div class="artist ${isLeftLayout ? "" : "r"}">
+    <div class="artist ${isLeftLayout ? "" : "r"} shiny">
       ${isLeftLayout ? smallSideHTML + bigSideHTML : bigSideHTML + smallSideHTML}
     </div>
   `;
