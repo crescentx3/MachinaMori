@@ -1,7 +1,7 @@
 const artists = [
   {
     name: "HYPNOPOSSUM",
-    songs: "//Furor_Machinae",
+    songs: "//FUROR_MACHINAE",
     bio: "Coming Soon",
     profile: "/assets/profiles/hypnopossum.jpg",
     twitter: "https://twitter.com/HYPN0POSSUM",
