@@ -60,7 +60,7 @@ const artists = [
     profile: "/assets/profiles/davp.png",
     twitter: "https://twitter.com/DavPOFFICIAL",
     youtube: "https://youtube.com/@DavPMUSIC",
-    bluesky: "",
+    bluesky: "https://bsky.app/profile/dav-p.bsky.social",
   },
   {
     name: "Maiku Tachibana",
