@@ -1,13 +1,12 @@
-/* popup.css */
 
-/* Fullscreen overlay with blur */
+
 .popup {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2); /* semi-transparent overlay */
+  background: rgba(255, 255, 255, 0.2); 
   backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
@@ -15,16 +14,16 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  z-index: 10000; /* high z-index to overlay everything */
+  z-index: 10000; 
 }
 
-/* When visible, allow interaction */
+
 .popup.visible {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* The popup container styling */
+
 .popup-content {
   background: #ffffff8d;
   padding: 2rem;
@@ -37,7 +36,7 @@
   animation: popup-appear 0.3s ease-out;
 }
 
-/* Close button styling */
+
 .popup-close {
   position: absolute;
   top: 10px;
@@ -46,7 +45,7 @@
   cursor: pointer;
 }
 
-/* Keyframe animation for a subtle popup entrance */
+
 @keyframes popup-appear {
   from {
     transform: scale(0.95);
