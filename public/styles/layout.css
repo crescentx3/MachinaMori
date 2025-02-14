@@ -144,8 +144,12 @@ ul{
   filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 1));
 }
 .iframe {
+  margin-top: 20px;
   max-width: 90%;
-  
+  border-radius: 20px;
+  border: solid;
+  border-color: #FFFFFFAA;
+  border-width: 0.2rem;
 }
 .splash-text {
   text-align: center;
