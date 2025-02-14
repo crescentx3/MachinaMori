@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>wires :3</title>
@@ -38,13 +39,17 @@
   <script src="/scripts/shader-init.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend+Peta:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend+Peta:wght@100..900&family=Lexend:wght@100..900&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="/styles/layout.css">
   <link rel="stylesheet" href="/styles/artists.css">
+  <link rel="stylesheet" href="/styles/popup.css">
 </head>
+
 <body>
- <!-- <header class="top-bar">
+  <!-- <header class="top-bar">
     <img src="/assets/Machina Logo.svg" alt="Logo" class="logo">
     <div class="nav-buttons">
       <button class="button">About</button>
@@ -60,27 +65,150 @@
         <img src="/assets/Machina Logo.svg" alt="Logo" class="main-logo">
         <h1 class="album-date">2-14-25</h1>
         <p class="splash-text">
-          MACHINA MORI is an Adachi Rei collaboration album and a heartfelt passion project featuring 15 of your favorite VOCALOID producers from around the world and mage ps house! MACHINA MORI officially releases on February 14th, 2025.
+          MACHINA MORI is an Adachi Rei collaboration album and a heartfelt passion project featuring 15 of your
+          favorite VOCALOID producers from around the world and mage ps house! MACHINA MORI officially releases on
+          February 14th, 2025.
         <div class="main-buttons">
-          <a href="https://payhip.com/MACHINAMORI"  target="_blank">
-          <button class="button main-button">Shop <i class="material-icons">shopping_cart</i></button>
-        </a>
-        <a href="ffm.to/machina-mori" target="_blank">
-          <button class="button main-button">Listen <i class="material-icons">speaker_group</i></button>
-        </a>
+          <a href="https://payhip.com/MACHINAMORI" target="_blank">
+            <button class="button main-button">Shop <i class="material-icons">shopping_cart</i></button>
+          </a>
+          <a href="https://ffm.to/machina-mori" target="_blank">
+            <button class="button main-button">Listen <i class="material-icons">speaker_group</i></button>
+          </a>
         </div>
       </div>
       <div id="artists-container">
         <script src="/scripts/artists.js"></script>
         <script src="/scripts/index.js"></script>
       </div>
+      <button class="button credits-button">Full Credits</button>
     </div>
   </main>
   <footer>
     <p class="site-credit">
       Site by crescent :3 &#x1F3F3;&#xFE0F;&zwj;&#x26A7;&#xFE0F;
     </p>
-    <p class="ver">v0.9</p>
+    <p class="ver">v0.95</p>
   </footer>
 </body>
+<div id="credits-popup" class="popup">
+  <div class="popup-content">
+    <button class="button popup-close" aria-label="Close Popup">&times;</button>
+    <h1>CREDITS</h1>
+    <div class="section">
+      <h1>MECHANICAL</h1>
+      <ol type="1">
+        <li>FUROR_MACHINAE / HYPNOPOSSUM</li>
+        <li>SMILE_OF_ABSOLUTE_DERANGEMENT / electrovoid</li>
+        <li>VISIONS / keyesgen</li>
+        <li>Glass Girl / Eggtan</li>
+        <li>Absence of Light / beat_shobon</li>
+        <li>0NE / Staircatte</li>
+        <li>EDEN 4164616D / Dav-P</li>
+        <li>INTERLUDE / Maiku Tachibana x 0TS</li>
+      </ol>
+    </div>
+
+    <!-- MORTAL -->
+    <div class="section">
+      <h1>MORTAL</h1>
+      <ol start="9">
+        <li>The Ruminations of Adachi Rei / Maiku Tachibana</li>
+        <li>8 Billion Shapeshifters / Vuvuzela</li>
+        <li>World End Credits / Mage-P</li>
+        <li>Positive Result / 0TS</li>
+        <li>Atomize / Witches With Glitches</li>
+        <li>Dance Delightful / Jamie Paige</li>
+        <li>Wireframe / TOKiMADE</li>
+        <li>GIMMICK GIRL (Remaster) / MonochroMenace</li>
+      </ol>
+    </div>
+
+    <!-- OTHER ROLES -->
+    <div class="section">
+      <h2>Promotional Material</h2>
+      <ul>
+        <li>Mage-P</li>
+        <li>KakyuuKei</li>
+        <li>0TS</li>
+      </ul>
+    </div>
+
+    <!-- Organizing -->
+    <div class="section">
+      <h2>Organizing</h2>
+      <ul>
+        <li>0TS</li>
+        <li>Keyesgen</li>
+      </ul>
+    </div>
+    <!-- Artists -->
+    <div class="section">
+      <h2>Artists</h2>
+      <ul>
+        <li>lucielellis / Lead Artist</li>
+        <li>Mage-P / Additional Artwork</li>
+      </ul>
+    </div>
+
+    <!-- Mastering -->
+    <div class="section">
+      <h2>Mastering</h2>
+      <ul>
+        <li>Jamie Paige / the entire album!</li>
+      </ul>
+    </div>
+
+    <!-- Tuning -->
+    <div class="section">
+      <h2>Tuning</h2>
+      <ol type="1">
+        <li>FUROR_MACHINAE / Ocean Eyes</li>
+        <li>SMILE_OF_ABSOLUTE_DERANGEMENT / electrovoid</li>
+        <li>VISIONS / HWAAStyle</li>
+        <li>Glass Girl / Eggtan</li>
+        <li>Absence of Light / beat_shobon</li>
+        <li>0NE / Staircatte</li>
+        <li>EDEN 4164616D / Dav-P</li>
+        <li>INTERLUDE / Maiku Tachibana x 0TS</li>
+        <li>The Ruminations of Adachi Rei / Ocean Eyes</li>
+        <li>8 Billion Shapeshifters / aster</li>
+        <li>World End Credits / HeyItsVal88</li>
+        <li>Positive Result / 0TS</li>
+        <li>Atomize / MonochroMenace</li>
+        <li>Dance Delightful / Jamie Paige</li>
+        <li>Wireframe / TOKiMADE</li>
+        <li>GIMMICK GIRL (Remaster) / MonochroMenace</li>
+      </ol>
+    </div>
+
+    <!-- Lyrics -->
+    <div class="section">
+      <h2>Lyrics</h2>
+      <ol type="1">
+        <li>FUROR_MACHINAE / HYPNOPOSSUM</li>
+        <li>SMILE_OF_ABSOLUTE_DERANGEMENT / electrovoid</li>
+        <li>VISIONS / keyesgen</li>
+        <li>Glass Girl / Eggtan</li>
+        <li>Absence of Light / beat_shobon</li>
+        <li>0NE / Staircatte, Du Du Danyon</li>
+        <li>EDEN 4164616D / Daybreak</li>
+        <li>INTERLUDE / Maiku Tachibana x 0TS</li>
+        <li>The Ruminations of Adachi Rei / Maiku Tachibana</li>
+        <li>8 Billion Shapeshifters / Vuvuzela</li>
+        <li>World End Credits / Mage-P</li>
+        <li>Positive Result / 0TS</li>
+        <li>Atomize / Witches With Glitches</li>
+        <li>Dance Delightful / Jamie Paige</li>
+        <li>Wireframe / TOKiMADE</li>
+        <li>GIMMICK GIRL (Remaster) / MonochroMenace</li>
+      </ol>
+    </div>
+    </body>
+
+</html>
+</div>
+</div>
+<script src="/scripts/popup.js"></script>
+
 </html>
