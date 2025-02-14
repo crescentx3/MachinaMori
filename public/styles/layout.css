@@ -1,3 +1,4 @@
+
 #shader-container {
   width: 100%;
   position: absolute;
@@ -12,52 +13,58 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(64, 64, 64, 0.3);
+  background-color: rgba(64, 64, 64, .3);
   z-index: 1;
 }
-footer{
+
+a {
+  text-decoration: none;
+}
+
+footer {
   margin-bottom: 100px;
 }
-html {
 
+html {
   font-size: 16px;
   font-family: 'Lexend', sans-serif;
-  color: rgb(0, 0, 20)
+  color: rgb(0, 0, 20);
 }
+
 body {
   text-align: center;
-
 }
 
 .shader::before {
-  background-color: rgba(0, 0, 0, .5);
-  
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
 .top-color-block {
   position: relative;
   margin-inline: 0;
   padding: 0;
   width: 100%;
-  background-color: rgba(255, 205, 100, .5);
-  box-shadow: 0 10px 20px rgba(255,205,100,.5);
+  background-color: rgba(221, 182, 97, 0.487);
+  box-shadow: 0 10px 20px rgba(255, 205, 100, 0.5);
 }
+
 .top-bar {
   position: relative;
   font-family: 'Lexend', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   padding-bottom: 5px;
-  background-color: rgba(255, 128, 37, .8);
-  box-shadow: 0 0 20px rgba(255, 128, 37, .80);
+  background-color: rgba(255, 128, 37, 0.8);
+  box-shadow: 0 0 20px rgba(255, 128, 37, 0.8);
 }
 
 .logo {
   position: relative;
   height: 50px;
   align-content: flex-start;
-  filter: drop-shadow(2px 1px 2px rgba(0, 0, 0, .5)) brightness(0);
+  filter: drop-shadow(2px 1px 2px rgba(0, 0, 0, 0.5)) brightness(0);
   transition: transform 1000ms ease-in-out;
 }
 
@@ -65,13 +72,13 @@ body {
   transform: rotate(720deg);
 }
 
-.coming-soon-buttons {
+.nav-buttons {
   position: relative;
   display: flex;
   gap: 1rem;
 }
 
-.soon {
+.button {
   font-family: Audiowide;
   font-size: 80%;
   font-weight: 700;
@@ -79,18 +86,30 @@ body {
   border: solid;
   border-radius: 20px;
   border-color: #FFFFFFAA;
-  background: radial-gradient(circle, rgba(255, 213, 49, 1.00), rgba(255, 128, 37, 1.00));
+  background: radial-gradient(circle, rgba(255, 213, 49, 1), rgba(255, 128, 37, 1));
   color: #000;
   cursor: pointer;
   transition: all 150ms;
-
 }
 
-.soon:hover {
+.main-button {
+  font-size: 4vh;
+  padding: 2vw 2vh;
+  border-radius: 20px;
+  aspect-ratio: 3;
+  border-color: #00000061;
+  border-width: 0.5rem;
+  background: radial-gradient(circle, rgba(255, 213, 49, 1), rgba(255, 128, 37, 1));
+  color: #000;
+  cursor: pointer;
+  transition: all 150ms;
+}
+
+.button:hover {
   transform: translateY(-2px);
 }
 
-.soon:active {
+.button:active {
   transform: translateY(2px);
 }
 
@@ -98,10 +117,11 @@ body {
   min-width: 80%;
   max-width: 90%;
   margin-top: 2rem;
-  margin-bottom: calc(max((60pt - 15vw), 0));
-  filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.5)) drop-shadow(0px 0px 2px rgba(255, 255, 255, 1)) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+  margin-bottom: -1vw;
+  filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.5))
+          drop-shadow(0px 0px 2px rgba(255, 255, 255, 1))
+          drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
 }
-
 
 .album-date {
   font-family: 'Audiowide', sans-serif;
@@ -115,7 +135,6 @@ body {
 
 .splash-text {
   text-align: center;
-  margin-inline: 20%;
   margin-top: -18px;
   font-size: 3vw;
   filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 1));
@@ -138,7 +157,6 @@ body {
   font-size: 12pt;
 }
 
-
 .shader-web-background-fallback {
   background: url("https://placekitten.com/666/666");
   background-position: center;
@@ -146,22 +164,35 @@ body {
   background-attachment: fixed;
 }
 
-@media (max-aspect-ratio:0.75) {
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+}
+@media (max-aspect-ratio: 0.75) {
   .top-bar {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
   .coming-soon-buttons {
     flex-direction: column;
     gap: 0.5rem;
   }
-
   .splash-text {
     margin-inline: 5%;
   }
-
   .credit {
     margin-top: 150px;
     margin-inline: 5%;
@@ -173,9 +204,9 @@ body {
     margin-bottom: 100px;
   }
 }
-@media screen and (min-width: 720px) {
-.top-section {
-  scale: 0.8;
-}
 
+@media screen and (min-width: 720px) {
+  .top-section {
+    scale: 0.8;
+  }
 }
